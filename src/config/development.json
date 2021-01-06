@@ -1,5 +1,20 @@
 {
   "CUSTOM_TYPES": {
+    "PoW": {
+      "indices": "Vec<u8>",
+      "nonce": "Vec<u8>",
+      "difficulty": "u32"
+    },
+    "BeamBlockHeader": {
+      "height": "u64",
+      "prev": "Vec<u8>",
+      "chain_work": "Vec<u8>",
+      "kernels": "Vec<u8>",
+      "definition": "Vec<u8>",
+      "timestamp": "u64",
+      "pow": "PoW",
+      "is_valid_pow": "bool"
+    },
     "Address": "AccountId",
     "LookupSource": "AccountId"
   },
